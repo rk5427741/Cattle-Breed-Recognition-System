@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+*.egg-info/
+dist/
+build/
+
+# Model files (large)
+models/*.h5
+models/*.hdf5
+models/*.pt
+models/*.pth
+models/training_history.png
+
+# Dataset (large files)
+static/dataset/**/*.jpg
+static/dataset/**/*.jpeg
+static/dataset/**/*.png
+static/dataset/**/*.JPG
+static/dataset/**/*.JPEG
+static/dataset/**/*.PNG
+!static/dataset/**/README.txt
+
+# Uploads
+static/uploads/*
+!static/uploads/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.env
+frontend/.env.local
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+

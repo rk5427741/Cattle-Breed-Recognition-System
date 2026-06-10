@@ -1,0 +1,25 @@
+{
+  "base_model": "EfficientNetB0",
+  "img_size": 224,
+  "class_names": [
+    "Angus",
+    "Brahman",
+    "Hereford",
+    "Holstein",
+    "Jersey",
+    "Sahiwal",
+    "Simmental",
+    "gir",
+    "himachali_pahari",
+    "nari",
+    "not_cattle",
+    "tharparkar"
+  ],
+  "num_classes": 12,
+  "dropout": 0.35,
+  "reject_confidence_pct": 20.0,
+  "validation_approach": "reject only on confidence < 0.20 or not_cattle > 0.70",
+  "min_confidence": 0.2,
+  "min_margin": 0.02,
+  "max_not_cattle_prob": 0.75
+}
